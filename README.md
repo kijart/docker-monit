@@ -17,3 +17,23 @@ Docker documentation: https://docs.docker.com/
 - build docker image `docker build -t monit .`
 
 - start monit: `docker run -ti -p 2812:2812 -v $(pwd)/monitrc:/etc/monitrc monit`
+
+### Docker Hub image
+
+- pull docker image from docker hub: `docker pull kijart/monit`
+
+- download a video using docker image: `docker run -ti -p 2812:2812 -v $(pwd)/monitrc:/etc/monitrc kijart/monit`
+
+- create a docker container:
+
+```
+docker create \
+  --name=monit \
+  -p 2812:2812 \
+  -v $(pwd)/monitrc:/etc/monitrc \
+  kijart/monit
+```
+
+### Troubleshooting
+
+If when starting Monit returns the following message: `The control file '/etc/monitrc' permission 0755 is wrong, maximum 0700 allowed`, simply give the appropriate permissions to _monitrc_: `chmod 700 monitrc`.
