@@ -10,6 +10,8 @@ Run Monit inside docker.
 
 Install docker: https://docs.docker.com/engine/installation/
 
+Install docker compose: https://docs.docker.com/compose/install/
+
 Docker documentation: https://docs.docker.com/
 
 ### Build-in docker image
@@ -22,7 +24,7 @@ Docker documentation: https://docs.docker.com/
 
 - pull docker image from docker hub: `docker pull kijart/monit`
 
-- download a video using docker image: `docker run -ti -p 2812:2812 -v $(pwd)/monitrc:/etc/monitrc kijart/monit`
+- start monit: `docker run -ti -p 2812:2812 -v $(pwd)/monitrc:/etc/monitrc kijart/monit`
 
 - create a docker container:
 
@@ -33,6 +35,12 @@ docker create \
   -v $(pwd)/monitrc:/etc/monitrc \
   kijart/monit
 ```
+
+### Docker compose
+
+- create a container using docker-compose: `docker-compose up --no-start`
+
+- start monit: `docker-compose up`
 
 ### Troubleshooting
 
