@@ -1,0 +1,8 @@
+version: '3'
+services:
+  monit:
+    image: "kijart/monit"
+    ports:
+      - 2812:2812
+    volumes:
+      - ./monitrc:/etc/monitrc
