@@ -3,7 +3,7 @@ FROM alpine:3.8
 LABEL maintainer="Luis Miguel Vicente Fuentes <kijart@gmail.com>"
 
 # monit environment variables
-ENV MONIT_VERSION=5.25.2 \
+ENV MONIT_VERSION=5.26.0 \
     MONIT_HOME=/opt/monit \
     MONIT_URL=https://mmonit.com/monit/dist \
     PATH=$PATH:/opt/monit/bin
