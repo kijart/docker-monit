@@ -1,6 +1,6 @@
 FROM alpine:3.8
 
-LABEL maintainer="Luis Miguel Vicente Fuentes <kijart@gmail.com>"
+LABEL maintainer="Luis Miguel Vicente Fuentes"
 
 # monit environment variables
 ENV MONIT_VERSION=5.27.0 \
