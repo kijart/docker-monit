@@ -8,6 +8,17 @@ Run Monit inside docker.
 
 Default username/password: `admin/monit`
 
+## Versions
+
+| Docker image           | Monit     |
+| ---------------------- | --------- |
+| `kijart/monit:latest`  | `5.26.0`  |
+| `kijart/monit:1.2.0`   | `5.26.0`  |
+| `kijart/monit:1.1.0`   | `5.25.2`  |
+| `kijart/monit:1.0.2`   | `5.25.1`  |
+| `kijart/monit:1.0.1`   | `5.25.1`  |
+| `kijart/monit:1.0.0`   | `5.25.1`  |
+
 ## Docker setup
 
 Install docker: <https://docs.docker.com/engine/installation/>
