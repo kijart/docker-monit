@@ -1,3 +1,5 @@
+[![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/kijart/monit.svg)](https://hub.docker.com/r/kijart/monit)
+
 # Monit - UNIX Systems Management
 
 Run Monit inside docker.
