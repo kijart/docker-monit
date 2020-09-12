@@ -6,27 +6,27 @@ Run Monit inside docker.
 
 [Monit](https://mmonit.com/monit/) is a free open source utility for managing and monitoring, processes, programs, files, directories and filesystems on a UNIX system. Monit conducts automatic maintenance and repair and can execute meaningful causal actions in error situations.
 
-Default username/password: admin/monit
+Default username/password: `admin/monit`
 
 ## Docker setup
 
-Install docker: https://docs.docker.com/engine/installation/
+Install docker: <https://docs.docker.com/engine/installation/>
 
-Install docker compose: https://docs.docker.com/compose/install/
+Install docker compose: <https://docs.docker.com/compose/install/>
 
-Docker documentation: https://docs.docker.com/
+Docker documentation: <https://docs.docker.com/>
 
 ### Build-in docker image
 
 - build docker image `docker build -t monit .`
 
-- start monit: `docker run -ti -p 2812:2812 -v $(pwd)/monitrc:/etc/monitrc monit`
+- start monit: `docker run --rm -it -p 2812:2812 -v $(pwd)/monitrc:/etc/monitrc monit`
 
 ### Docker Hub image
 
-- pull docker image from docker hub: `docker pull kijart/monit`
+- pull docker image from docker hub: `docker pull kijart/monit:latest`
 
-- start monit: `docker run -ti -p 2812:2812 -v $(pwd)/monitrc:/etc/monitrc kijart/monit`
+- start monit: `docker run --rm -it -p 2812:2812 -v $(pwd)/monitrc:/etc/monitrc kijart/monit:latest`
 
 - create a docker container:
 
@@ -35,7 +35,7 @@ docker create \
   --name=monit \
   -p 2812:2812 \
   -v $(pwd)/monitrc:/etc/monitrc \
-  kijart/monit
+  kijart/monit:latest
 ```
 
 ### Docker compose
