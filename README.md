@@ -14,7 +14,8 @@ Default username/password: `admin/monit`
 
 | Docker image           | Monit     |
 | ---------------------- | --------- |
-| `kijart/monit:latest`  | `5.26.0`  |
+| `kijart/monit:latest`  | `5.27.0`  |
+| `kijart/monit:1.3.0`   | `5.27.0`  |
 | `kijart/monit:1.2.0`   | `5.26.0`  |
 | `kijart/monit:1.1.0`   | `5.25.2`  |
 | `kijart/monit:1.0.2`   | `5.25.1`  |
