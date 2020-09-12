@@ -1,7 +1,12 @@
-version: '3'
+version: "2"
 services:
   monit:
-    image: "kijart/monit"
+    image: kijart/monit:latest
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "5"
     ports:
       - 2812:2812
     volumes:
