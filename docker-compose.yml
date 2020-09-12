@@ -1,7 +1,7 @@
 version: "2"
 services:
   monit:
-    image: "kijart/monit"
+    image: kijart/monit:latest
     logging:
       driver: json-file
       options:
