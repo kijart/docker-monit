@@ -35,6 +35,7 @@ Docker documentation: <https://docs.docker.com/>
 - build docker image `docker build -t monit .`
 
 - start monit: `docker run --rm -it -p 2812:2812 -v $(pwd)/monitrc:/etc/monitrc monit`
+> note: monitrc is a file! create before docker run.
 
 ### Docker Hub image
 
@@ -61,3 +62,5 @@ docker create \
 ### Troubleshooting
 
 If when starting Monit returns the following message: `The control file '/etc/monitrc' permission 0755 is wrong, maximum 0700 allowed`, simply give the appropriate permissions to _monitrc_: `chmod 700 monitrc`.
+
+If when starting Monit returns the following message: `input in flex scanner failed`, simply you need to create an empty file with name `monitrc` in your source folder will do.
